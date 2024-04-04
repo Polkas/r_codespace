@@ -1,0 +1,18 @@
+{
+    "name": "R Development",
+    "image": "rocker/r-ver:4.2.2",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "Ikuyadeu.r",
+        "REditorSupport.r-lsp",
+        "REditorSupport.vscode-r-debugger",
+        "Ikuyadeu.r-pack",
+        "ms-vscode-remote.remote-containers",
+        "eamodio.gitlens"
+    ],
+    "forwardPorts": [8787],
+    "postCreateCommand": "echo 'Container ready for R development!'",
+    "remoteUser": "rstudio"
+}
