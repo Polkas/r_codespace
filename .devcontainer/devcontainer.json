@@ -1,6 +1,6 @@
 {
     "name": "R Development",
-    "image": "rocker/r-ver:4.2.2",
+    "image": "rocker/r-ver:4.3.2",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
@@ -13,6 +13,5 @@
         "eamodio.gitlens"
     ],
     "forwardPorts": [8787],
-    "postCreateCommand": "R -e 'if (!requireNamespace(\"renv\", quietly = TRUE)) install.packages(\"renv\"); renv::restore(lockfile = \"renv.lock\")'",
-    "remoteUser": "rstudio"
+    "postCreateCommand": "R -e 'if (!requireNamespace(\"renv\", quietly = TRUE)) install.packages(\"renv\"); renv::restore(lockfile = \"renv.lock\")'"
 }
