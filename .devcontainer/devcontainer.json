@@ -13,6 +13,6 @@
         "eamodio.gitlens"
     ],
     "forwardPorts": [8787],
-    "postCreateCommand": "echo 'Container ready for R development!'",
+    "postCreateCommand": "R -e 'if (!requireNamespace(\"renv\", quietly = TRUE)) install.packages(\"renv\"); renv::restore(lockfile = \"renv.lock\")'",
     "remoteUser": "rstudio"
 }
