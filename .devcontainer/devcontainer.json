@@ -1,6 +1,6 @@
 {
     "name": "R Development",
-    "image": "rocker/r-ver:4.3.2",
+    "image": "rocker/tidyverse:4.3.3",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
@@ -13,5 +13,5 @@
         "eamodio.gitlens"
     ],
     "forwardPorts": [8787],
-    "postCreateCommand": "apt-get update && apt-get install -y git && R -e 'if (!requireNamespace(\"renv\", quietly = TRUE)) install.packages(\"renv\"); renv::restore(lockfile = \"renv.lock\")'",
+    "postCreateCommand": "apt-get update && apt-get install -y git",
 }
