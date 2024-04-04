@@ -13,5 +13,5 @@
         "eamodio.gitlens"
     ],
     "forwardPorts": [8787],
-    "postCreateCommand": "apt-get update && apt-get install -y git && R -e 'if (!requireNamespace(\"renv\", quietly = TRUE)) install.packages(\"renv\"); renv::restore()'",
+    "postCreateCommand": "apt-get update && apt-get install -y git && R -e 'if (!requireNamespace(\"renv\", quietly = TRUE)) install.packages(\"renv\"); renv::restore(lockfile = \"renv.lock\")'",
 }
