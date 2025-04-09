@@ -9,17 +9,23 @@
         // Configure properties specific to VS Code.
         "vscode": {
             "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "/bin/bash",
+                        "args": ["-l"]
+                    }
+                },
                 "files.autoSave": "afterDelay",
                 "files.autoSaveDelay": 1000
             },
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
-                "Ikuyadeu.r",
-                "REditorSupport.r-lsp",
-                "REditorSupport.vscode-r-debugger",
-                "Ikuyadeu.r-pack",
-                "ms-vscode-remote.remote-containers",
-                "eamodio.gitlens"
+                "reditorsupport.r",
+                "eamodio.gitlens",
+                "github.copilot",
+                "github.copilot-chat",
+                "ms-vscode-remote.remote-containers"
             ]
         }
     },
