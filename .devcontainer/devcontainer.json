@@ -9,7 +9,8 @@
         // Configure properties specific to VS Code.
         "vscode": {
             "settings": {
-                "terminal.integrated.shell.linux": "/bin/bash"
+                "files.autoSave": "afterDelay",
+                "files.autoSaveDelay": 1000
             },
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
