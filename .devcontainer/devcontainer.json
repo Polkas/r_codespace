@@ -1,17 +1,26 @@
 {
     "name": "R Development",
     "image": "rocker/tidyverse:4.3.3",
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
-    "extensions": [
-        "Ikuyadeu.r",
-        "REditorSupport.r-lsp",
-        "REditorSupport.vscode-r-debugger",
-        "Ikuyadeu.r-pack",
-        "ms-vscode-remote.remote-containers",
-        "eamodio.gitlens"
-    ],
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+      },
     "forwardPorts": [8787],
-    "postCreateCommand": "apt-get update && apt-get install -y git",
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "Ikuyadeu.r",
+                "REditorSupport.r-lsp",
+                "REditorSupport.vscode-r-debugger",
+                "Ikuyadeu.r-pack",
+                "ms-vscode-remote.remote-containers",
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "postCreateCommand": "echo Hello World"
 }
