@@ -2,10 +2,6 @@
     "recommendations": [
         "reditorsupport.r",
         "Posit.air-vscode",
-
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "ms-python.autopep8",
         "ms-toolsai.jupyter",
 
         "eamodio.gitlens",

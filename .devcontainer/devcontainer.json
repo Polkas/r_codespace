@@ -3,14 +3,11 @@
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
         "ghcr.io/devcontainers/features/git:1": {},
-        "ghcr.io/devcontainers/features/python:1": {
-            "version": "3.12",
-            "installJupyterlab": true
-        },
         "ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
             "version": "4.4.2",
             "installRadian": true,
-            "installVscDebugger": true
+            "installVscDebugger": true,
+            "installJupyterlab": true
         }
     },
     "forwardPorts": [8787],
@@ -24,21 +21,13 @@
                     "editor.formatOnSave": true,
                     "editor.formatOnPaste": true,
                     "editor.defaultFormatter": "Posit.air-vscode"
-                },
-                "[python]": {
-                    "editor.formatOnSave": true,
-                    "editor.formatOnPaste": true,
-                    "editor.defaultFormatter": "ms-python.autopep8"
-                },
+                }
             },
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
                 "reditorsupport.r",
                 "Posit.air-vscode",
-
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "ms-python.autopep8",
+                "ms-toolsai.jupyter",
 
                 "eamodio.gitlens",
                 "github.copilot",
