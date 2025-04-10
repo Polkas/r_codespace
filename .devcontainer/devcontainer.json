@@ -1,31 +1,48 @@
 {
     "name": "R Development",
-    "image": "rocker/tidyverse:4.3.3",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/devcontainers/features/git:1": {}
-      },
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.12",
+            "installJupyterlab": true
+        },
+        "ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
+            "version": "4.4.2",
+            "installRadian": true,
+            "installVscDebugger": true
+        }
+    },
     "forwardPorts": [8787],
     "customizations": {
         // Configure properties specific to VS Code.
         "vscode": {
             "settings": {
-                "terminal.integrated.defaultProfile.linux": "bash",
-                "terminal.integrated.profiles.linux": {
-                    "bash": {
-                        "path": "/bin/bash",
-                        "args": ["-l"]
-                    }
-                },
                 "files.autoSave": "afterDelay",
-                "files.autoSaveDelay": 1000
+                "files.autoSaveDelay": 1000,
+                "[r]": {
+                    "editor.formatOnSave": true,
+                    "editor.formatOnPaste": true,
+                    "editor.defaultFormatter": "Posit.air-vscode"
+                },
+                "[python]": {
+                    "editor.formatOnSave": true,
+                    "editor.formatOnPaste": true,
+                    "editor.defaultFormatter": "ms-python.autopep8"
+                },
             },
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
                 "reditorsupport.r",
+                "Posit.air-vscode",
+
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.autopep8",
+
                 "eamodio.gitlens",
                 "github.copilot",
-                "github.copilot-chat",
-                "ms-vscode-remote.remote-containers"
+                "github.copilot-chat"
             ]
         }
     },
