@@ -10,7 +10,6 @@
             "installJupyterlab": true
         }
     },
-    "forwardPorts": [8787],
     "customizations": {
         // Configure properties specific to VS Code.
         "vscode": {
