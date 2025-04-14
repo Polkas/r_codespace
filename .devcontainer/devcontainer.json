@@ -1,9 +1,9 @@
 {
     "name": "R Development",
-	//"build": {
+    //"build": {
 	//	"dockerfile": "Dockerfile"
     //},
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/universal:2.9.0-focal",
     //"image": "rocker/tidyverse:4.4.2",
     "features": {
         "ghcr.io/devcontainers/features/git:1": {},
