@@ -27,6 +27,7 @@
                   "--no-save",
                   "--no-restore",
                   "--r-binary=/usr/local/bin/R"],
+                "r.bracketedPaste": true,
                 "[r]": {
                     "editor.formatOnSave": true,
                     "editor.formatOnPaste": true,
