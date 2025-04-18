@@ -1,10 +1,6 @@
 {
     "name": "R Development",
-    //"build": {
-	//	"dockerfile": "Dockerfile"
-    //},
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    //"image": "rocker/tidyverse:4.4.2",
     "features": {
         "ghcr.io/devcontainers/features/git:1": {},
         "ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
@@ -16,7 +12,6 @@
         }
     },
     "customizations": {
-        // Configure properties specific to VS Code.
         "vscode": {
             "settings": {
                 "files.autoSave": "afterDelay",
@@ -34,7 +29,6 @@
                     "editor.defaultFormatter": "Posit.air-vscode"
                 }
             },
-            // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
                 "reditorsupport.r",
                 "Posit.air-vscode",
