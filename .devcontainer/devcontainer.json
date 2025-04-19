@@ -38,7 +38,6 @@
             "github.copilot",
             "github.copilot-chat"
         ]
-    }
-},
-"postCreateCommand": "echo Hello World"
+    },
+    "postCreateCommand": "echo Hello World"
 }
