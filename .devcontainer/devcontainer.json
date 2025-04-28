@@ -8,7 +8,7 @@
       "installRadian": true,
       "installVscDebugger": true,
       "installJupyterlab": true,
-      "vscodeRSupport": "full"
+      "vscodeRSupport": "lsp"
     }
   },
   "customizations": {
