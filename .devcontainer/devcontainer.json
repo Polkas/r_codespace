@@ -3,7 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
+    "ghcr.io/rocker-org/devcontainer-features/r-rig:latest": {
       "version": "4.4.2",
       "installRadian": true,
       "installVscDebugger": true,
